@@ -1,15 +1,66 @@
+import org.junit.Assert;
 import org.junit.Test;
 
-public class MainTest {
+public class MainTest extends CoreTestCase {
     @Test
-    public void myFirstTest() {
-        int a = 10;
-        int b = 15;
+    public void firstTest() {
+        int expected = 25;
+        int actual = 5 * 5;
 
-        if (a > b) {
-            System.out.println("This will never happen");
-        } else {
-            System.out.println("This is what will happen");
-        }
+        Assert.assertTrue("5 * 5 !=25",actual == expected);
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    @Test
+//    public void myFirstTest() {
+//        System.out.println("First test: Before changing static_int: " + MathHelper.static_int);
+//        MathHelper.static_int = 8;
+//        MathHelper mathObject = new MathHelper();
+//        System.out.println("First test: Before changes simple_int " + mathObject.simple_int);
+//        mathObject.simple_int = 8;
+//        this.typeStartMessage();
+//    }
+//
+//    @Test
+//    public void mySecondTest() {
+//        System.out.println("Second test: Before changing static_int: " + MathHelper.static_int);
+//        MathHelper.static_int = 8;
+//        MathHelper mathObject = new MathHelper();
+//        System.out.println("Second test: Before changes simple_int " + mathObject.simple_int);
+//        mathObject.simple_int = 8;
+//        this.typeStartMessage();
+//    }
+
+
+
+
