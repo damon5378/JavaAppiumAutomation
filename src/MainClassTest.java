@@ -3,22 +3,14 @@ import org.junit.Test;
 
 public class MainClassTest extends MainClass {
     @Test
-    public void testGetClassNumber() {
-        int a = this.getClassNumber();
-        if (a <= 45) {
-            System.out.println("Good");
-        } else if (a >= 45) {
-            System.out.println("Not good");
-        } else {
-           System.out.println("Your number from other Universe");
-        }
+    public void testGetClassString() {
+        String a = this.class_string;
+
+        Assert.assertTrue("Hello", a.contains("Hello"));
+        Assert.assertTrue("hello", a.contains("hello"));
+        Assert.assertTrue("Other", a.contains("Other"));
 
     }
-
-
-
-
-
 
     }
 
